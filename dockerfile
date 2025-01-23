@@ -1,5 +1,5 @@
-FROM ubuntu
+FROM httpd
 COPY . .
-WORKDIR /var/docker/index.html
+WORKDIR /var/docker/app
 RUN apt update
-CMD apt install tree
+
